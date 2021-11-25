@@ -1,0 +1,47 @@
+body{
+    background-color: bisque;
+}
+
+#bingo {
+    margin: auto;
+    border: 3px solid black;
+    height: 650px;
+    width: 650px;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#bingo td, th{
+    border: 1px solid black;
+    width: 130px;
+    height: 130px;
+}
+
+.cellButton{
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    color:black;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    float: none;
+    padding-inline-start: 0;
+}
+
+
+.title li{
+    display: inline-block;
+    float:none;
+    margin: 0 25px
+}
