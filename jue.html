@@ -7,14 +7,15 @@
 </head>
 
 <body onload="generateJue()">
-    <h1 class="title">Bingo: Jütten Edition</h1>
-    <a class="title">Die Tabelle ist interaktiv btw<br></a>
-    <a class="title" id="counter">Verschiedene Felder: </a>
-    <ul class="title">
-        <li><a href="">Refresh</a></li>
+    <h1 class="center">Bingo: Jütten Edition</h1>
+    <a class="center">Die Tabelle ist interaktiv btw<br></a>
+    <a class="center" id="counter">Verschiedene Felder: </a>
+    <ul class="center navbar">
+        <li><a onclick="generateJue()">Refresh</a></li>
         <li><a href="mol.html">Moll Edition<br></a></li>
         <li><a href="law.html">Lawson Edition<br></a></li>
     </ul>
+    <center><input type="range" id="size" min="4" max="8" value="5" onChange="generateJue()"> <a id="sizeText">5</a></center>
     <div style="padding-bottom: 30px;"></div>
     <table id="bingo"></table>
 </body>

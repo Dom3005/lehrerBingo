@@ -18,7 +18,7 @@ let fieldsJue =
     "verwechselt Namen", "nochmal bitte", "öhhh ja", "we already found out..", "what was it?",
     "do you remember..", "thats what .. said", "Jütten.exe has stopped working", "äääähm", "da möchte ich nichts zu sagen",
     "but first..", "good", "ok, any other..", "we're still looking at..", "can you explain..?",
-    "ok", "say it again", "kurze Stille", "right", '"Nennt eine Sache ".. and so on"',
+    "ok", "say it again", "kurze Stille", "right", '[Nennt eine Sache] ".. and so on"',
     "so again", "beschwert sich", "can you think of ..", "äääh.."]
 
 let fieldsMol = 
@@ -57,15 +57,18 @@ function generateMol(){
     grid[12] = middleMol;
     generateTable();
 
-    document.getElementById("counter").text += fieldsMol.length;
+    document.getElementById("counter").text = "Verschiedene Felder: " + fieldsMol.length;
 }
 
 function generateJue(){
-    size = 7;
+    var slider = document.getElementById("size");
+    var sliderText = document.getElementById("sizeText").text = slider.value;
+    size = slider.value;
+    grid = [];
     overrideGrid(fieldsJue, 0);
     generateTable();
 
-    document.getElementById("counter").text += fieldsJue.length;
+    document.getElementById("counter").text = "Verschiedene Felder: " + fieldsJue.length;
 }
 
 function generateLaw(){
@@ -73,7 +76,7 @@ function generateLaw(){
     overrideGrid(fieldsLaw, 0);
     generateTable();
 
-    document.getElementById("counter").text += fieldsLaw.length;
+    document.getElementById("counter").text = "Verschiedene Felder: " + fieldsLaw.length;
 }
 
 function generateTable(){
