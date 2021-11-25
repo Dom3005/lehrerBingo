@@ -76,3 +76,11 @@ body{
     background-repeat: no-repeat;
     fill: white;
 }
+
+#github{
+    background: url("github.svg");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: white;
+}

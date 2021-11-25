@@ -53,6 +53,7 @@ document.addEventListener('click', function(e){
 
 function generateMol(){
     size = 5;
+    grid = [];
     overrideGrid(fieldsMol, 0);
     grid[12] = middleMol;
     generateTable();
@@ -62,7 +63,7 @@ function generateMol(){
 
 function generateJue(){
     var slider = document.getElementById("size");
-    var sliderText = document.getElementById("sizeText").text = slider.value;
+    document.getElementById("sizeText").text = slider.value;
     size = slider.value;
     grid = [];
     overrideGrid(fieldsJue, 0);
@@ -73,6 +74,7 @@ function generateJue(){
 
 function generateLaw(){
     size = 4;
+    grid = [];
     overrideGrid(fieldsLaw, 0);
     generateTable();
 
