@@ -39,10 +39,25 @@ body{
     padding-inline-start: 0;
 }
 
+.navbar {
+    font-size: 0;
+}
+
 .navbar li{
-    display: inline-block;
-    float:none;
-    margin: 0 25px
+    font-size: medium;
+    display: inline-flex;
+    background-color: #222;
+    cursor: pointer;
+}
+
+.navbar li:hover{
+    background-color: #333;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
 }
 
 #size {
@@ -52,4 +67,12 @@ body{
 #sizeText{
     vertical-align: super;
     font-size: large;
+}
+
+#insta{
+    background: url("insta.svg");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: white;
 }
