@@ -1,8 +1,9 @@
 let fieldsLaw = 
     ["Ist nichts wildes", "Rickroll", "Timer", "Mobbt Leute", "Mobbinator",
-    "schlechte Witze", "Redet Englisch", "Anekdote", "Geschichten aus vergangenen Zeiten", "Begriffe aus dem Englischen",
-    "Honk", '"beleidigt" jemanden', "Probleme mit dem Tauschordner", "StaSi-Modus",
-    "Beamer-Freeze", "Präsentiert Ergebnisse von anderen", "Die Dominik-und-Max-Lösung"]
+    "schlechte Witze", "Redet Englisch", "Erzählt Geschichte", "Geschichten aus vergangenen Zeiten", "Begriffe aus dem Englischen",
+    "Honk", "Schätzchen", "Probleme mit dem Tauschordner", "StaSi-Modus", "Zeigt Memes",
+    "Beamer-Freeze", "Präsentiert Ergebnisse von anderen", "Die Dominik-und-Max-Lösung", "Der Russe", "[JOKER]",
+    "(ironischer) Spruch gegen Ausländer"]
 
 let fieldsJue =
     ["Ääää.. öööö.. ääh", "Fenster auf", "Atlanten", "Erwähnt seine Reisen", "Oh.. da war ich schonmal",
