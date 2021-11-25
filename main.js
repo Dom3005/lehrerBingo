@@ -1,3 +1,9 @@
+let fieldsLaw = 
+    ["Ist nichts wildes", "Rickroll", "Timer", "Mobbt Leute", "Mobbinator",
+    "schlechte Witze", "Redet Englisch", "Anekdote", "Geschichten aus vergangenen Zeiten", "Begriffe aus dem Englischen",
+    "Honk", '"beleidigt" jemanden', "Probleme mit dem Tauschordner", "StaSi-Modus",
+    "Beamer-Freeze", "Präsentiert Ergebnisse von anderen", "Die Dominik-und-Max-Lösung"]
+
 let fieldsJue =
     ["Ääää.. öööö.. ääh", "Fenster auf", "Atlanten", "Erwähnt seine Reisen", "Oh.. da war ich schonmal",
     '"verspricht" Bilder zu zeigen', "letzte Reihe", "Unterbricht andere", "Überprüft Anwesenheit", "in a minute",
@@ -15,18 +21,18 @@ let fieldsJue =
     "so again", "beschwert sich", "can you think of ..", "äääh.."]
 
 let fieldsMol = 
-["Holzweiler", "Wie ist die Stimmung?", "Buch auf Seite X", "Stoff aus der EF", "Habt ihr noch nicht gelernt",
-"Kommt erst in der Q2", "Das ist eigentlich Unterstufenstoff", "Das ist eigentlich Mittelstufenstoff", "Frage oder Anwort?", "Kommt erkältet in den Unterricht",
-"Macht mal bitte Aufgabe X auf Seite Y als Hausaufgabe", "Die Hausaufgaben macht ihr für euch, nicht für mich", "Vergisst Hausaufgaben aufgegeben zu haben", "Das ist Klausurrelevant", "Das ist nicht Klausurrelevant",
-"Buch aufschlagen", "Ihr macht jetzt bitte Aufgabe X für mich", "Fenster auf", "Redet über Fallzahlen", "Verstanden?",
-"Mittelmäßige Skizze", "Wer hat hier Physik?", "Benutzt Abituraufgaben", "Erscheint zu spaet", "Da hätte ich mehr erwartet",
-"Redet über Geogebra", "Ich habe ja einen anderen Taschenrechner", "Das geht auch schneller", "Von Dennis weiss ich schon dass er das kann", "Ich hab euch was auf Moodle hochgeladen",
-"Das ist freiwillig", "Leuteee, das solltet ihr eigentlich koennen", "Da muss ich gleich mal in die Physiksammlung", "Wir liegen hinter dem Zeitplan", "Eigentlich habe ich ja was anderes geplant",
-"Regt sich auf", "1-Hand Clap", "Kurzes Handzeichen", "Jungs & Mädels", "Mädels",
-"Jungs", "habe ich schonmal gesagt", "nächste Woche", "wer schon fertig ist...", "wer hat einen funktionsfähigen Tachenrechner?",
-"das müsste man pruefen", "Sekunde", "auch ohne GTR", "Funktion definieren", "wer weiß wie das geht?",
-"mach ich mit meiner 8/9/EF/Q2", "so eine Geschichte", "Mathematiker sind faul", "nimmt jmd ohne Ahnung dran", "[Zahl ohne Einheit] was?",
-"Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein"];
+    ["Holzweiler", "Wie ist die Stimmung?", "Buch auf Seite X", "Stoff aus der EF", "Habt ihr noch nicht gelernt",
+    "Kommt erst in der Q2", "Das ist eigentlich Unterstufenstoff", "Das ist eigentlich Mittelstufenstoff", "Frage oder Anwort?", "Kommt erkältet in den Unterricht",
+    "Macht mal bitte Aufgabe X auf Seite Y als Hausaufgabe", "Die Hausaufgaben macht ihr für euch, nicht für mich", "Vergisst Hausaufgaben aufgegeben zu haben", "Das ist Klausurrelevant", "Das ist nicht Klausurrelevant",
+    "Buch aufschlagen", "Ihr macht jetzt bitte Aufgabe X für mich", "Fenster auf", "Redet über Fallzahlen", "Verstanden?",
+    "Mittelmäßige Skizze", "Wer hat hier Physik?", "Benutzt Abituraufgaben", "Erscheint zu spaet", "Da hätte ich mehr erwartet",
+    "Redet über Geogebra", "Ich habe ja einen anderen Taschenrechner", "Das geht auch schneller", "Von Dennis weiss ich schon dass er das kann", "Ich hab euch was auf Moodle hochgeladen",
+    "Das ist freiwillig", "Leuteee, das solltet ihr eigentlich koennen", "Da muss ich gleich mal in die Physiksammlung", "Wir liegen hinter dem Zeitplan", "Eigentlich habe ich ja was anderes geplant",
+    "Regt sich auf", "1-Hand Clap", "Kurzes Handzeichen", "Jungs & Mädels", "Mädels",
+    "Jungs", "habe ich schonmal gesagt", "nächste Woche", "wer schon fertig ist...", "wer hat einen funktionsfähigen Tachenrechner?",
+    "das müsste man pruefen", "Sekunde", "auch ohne GTR", "Funktion definieren", "wer weiß wie das geht?",
+    "mach ich mit meiner 8/9/EF/Q2", "so eine Geschichte", "Mathematiker sind faul", "nimmt jmd ohne Ahnung dran", "[Zahl ohne Einheit] was?",
+    "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein"];
 
 let middleMol = "Das Moll'sche Nicken"
 
@@ -45,6 +51,7 @@ document.addEventListener('click', function(e){
 }, false)
 
 function generateMol(){
+    size = 5;
     overrideGrid(fieldsMol, 0);
     grid[12] = middleMol;
     generateTable();
@@ -53,10 +60,19 @@ function generateMol(){
 }
 
 function generateJue(){
+    size = 7;
     overrideGrid(fieldsJue, 0);
     generateTable();
 
     document.getElementById("counter").text += fieldsJue.length;
+}
+
+function generateLaw(){
+    size = 4;
+    overrideGrid(fieldsLaw, 0);
+    generateTable();
+
+    document.getElementById("counter").text += fieldsLaw.length;
 }
 
 function generateTable(){
