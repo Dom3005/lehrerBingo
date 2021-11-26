@@ -35,9 +35,7 @@ let fieldsMol =
     "Jungs", "habe ich schonmal gesagt", "nächste Woche", "wer schon fertig ist...", "wer hat einen funktionsfähigen Tachenrechner?",
     "das müsste man pruefen", "Sekunde", "auch ohne GTR", "Funktion definieren", "wer weiß wie das geht?",
     "mach ich mit meiner 8/9/EF/Q2", "so eine Geschichte", "Mathematiker sind faul", "nimmt jmd ohne Ahnung dran", "[Zahl ohne Einheit] was?",
-    "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein", "Halb so wild"];
-
-let middleMol = "Das Moll'sche Nicken"
+    "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein", "Halb so wild", "Das Moll'sche Nicken"];
 
 let grid = [];
 let size = 5;
@@ -53,20 +51,12 @@ document.addEventListener('click', function(e){
         target.style.color = target.style.color != "red" ? "red" : "black";
 }, false)
 
-function generateZmm(){
-    size = 3;
-    grid = [];
-    overrideGrid(fieldsZmm, 0);
-    generateTable();
-
-    document.getElementById("counter").text = "Verschiedene Felder: " + fieldsZmm.length;
-}
-
 function generateMol(){
-    size = 5;
+    var slider = document.getElementById("size");
+    document.getElementById("sizeText").text = slider.value;
+    size = slider.value;
     grid = [];
     overrideGrid(fieldsMol, 0);
-    grid[12] = middleMol;
     generateTable();
 
     document.getElementById("counter").text = "Verschiedene Felder: " + fieldsMol.length;
