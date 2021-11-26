@@ -3,10 +3,9 @@ let fieldsLaw =
     "schlechte Witze", "Redet Englisch", "Erzählt Geschichte", "Geschichten aus vergangenen Zeiten", "Begriffe aus dem Englischen",
     "Honk", "Schätzchen", "Probleme mit dem Tauschordner", "StaSi-Modus", "Zeigt Memes",
     "Beamer-Freeze", "Präsentiert Ergebnisse von anderen", "Die Dominik-und-Max-Lösung", "Der Russe", "[JOKER]",
-    "(ironischer) Spruch gegen Ausländer", "Verkackt Deutsch", "Ein wichtiger Hinweis", "Verkackt Englisch",
+    "(ironischer) Spruch gegen Ausländer", "Verkackt Deutsch", "Ein wichtiger Hinweis", "Verkackt Englisch", "If-Schleife",
     "Und das macht ihr jetzt", "Läuft aus dem Raum", "Verschwindet Spurlos", "(ironischer) Rassistischer Witz", "Zeichnet an das Smartboard",
-    "Benutzt das Whiteboard", "Selbstironische Sprüche", "Was auch immer", "Klausurrelevant", "Nicht Klausurrelevant",
-    "If-Schleife"]
+    "Benutzt das Whiteboard", "Selbstironische Sprüche", "Was auch immer", "Klausurrelevant", "Nicht Klausurrelevant",]
 
 let fieldsJue =
     ["Ääää.. öööö.. ääh", "Fenster auf", "Atlanten", "Erwähnt seine Reisen", "Oh.. da war ich schonmal",
