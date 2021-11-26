@@ -92,7 +92,7 @@ function generateTable(){
     for(let i = 0; i < size; i++){
         var row = table.insertRow(i);
         for(let ii = 0; ii < size; ii++){
-            row.insertCell(ii).innerHTML = `<a class="cellButton" style="${"color:"grid[counter] == "[JOKER]" ? "red"}">${grid[counter]}</a>`;
+            row.insertCell(ii).innerHTML = `<a class="cellButton">${grid[counter]}</a>`;
             counter++;
         }
     }
