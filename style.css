@@ -70,7 +70,7 @@ body{
 }
 
 #insta{
-    background: url("insta.svg");
+    background: url("images/insta.svg");
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body{
 }
 
 #github{
-    background: url("github.svg");
+    background: url("images/github.svg");
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
