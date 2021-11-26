@@ -35,7 +35,7 @@ let fieldsMol =
     "Jungs", "habe ich schonmal gesagt", "nächste Woche", "wer schon fertig ist...", "wer hat einen funktionsfähigen Tachenrechner?",
     "das müsste man pruefen", "Sekunde", "auch ohne GTR", "Funktion definieren", "wer weiß wie das geht?",
     "mach ich mit meiner 8/9/EF/Q2", "so eine Geschichte", "Mathematiker sind faul", "nimmt jmd ohne Ahnung dran", "[Zahl ohne Einheit] was?",
-    "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein"];
+    "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein", "Halb so wild"];
 
 let middleMol = "Das Moll'sche Nicken"
 
