@@ -7,11 +7,6 @@ let fieldsLaw =
     "Und das macht ihr jetzt", "Läuft aus dem Raum", "Verschwindet Spurlos", "(ironischer) Rassistischer Witz", "Zeichnet an das Smartboard",
     "Benutzt das Whiteboard", "Selbstironische Sprüche", "Was auch immer", "Klausurrelevant", "Nicht Klausurrelevant",]
 
-let fieldsZmm =
-    ["Ist Gott", "Mobbt erste Reihe", "Übermotivation", "Du Knaller", "Genuin",
-    "Ben die letzte Lösung", "Stolpert über Kabel", "Schreibt an Tafel", "Lässt an Tafel schreiben", "Wert der Schuhe",
-    "Mobbt Nanette"]
-
 let fieldsJue =
     ["Ääää.. öööö.. ääh", "Fenster auf", "Atlanten", "Erwähnt seine Reisen", "Oh.. da war ich schonmal",
     '"verspricht" Bilder zu zeigen', "letzte Reihe", "Unterbricht andere", "Überprüft Anwesenheit", "in a minute",
