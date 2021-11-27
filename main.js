@@ -21,7 +21,8 @@ let fieldsJue =
     "do you remember..", "thats what .. said", "Jütten.exe has stopped working", "äääähm", "da möchte ich nichts zu sagen",
     "but first..", "good", "ok, any other..", "we're still looking at..", "can you explain..?",
     "ok", "say it again", "kurze Stille", "right", '[Nennt eine Sache] ".. and so on"',
-    "so again", "beschwert sich", "can you think of ..", "äääh.."]
+    "so again", "beschwert sich", "can you think of ..", "äääh..", "Der Jütten'sche Finger",
+    "Remember what we said about ..", "Are you still with us?", "Okeee", "Versteht nichts", "come again"]
 
 let fieldsMol = 
     ["Holzweiler", "Wie ist die Stimmung?", "Buch auf Seite X", "Stoff aus der EF", "Habt ihr noch nicht gelernt",
@@ -52,6 +53,7 @@ document.addEventListener('click', function(e){
 }, false)
 
 function generateMol(){
+    var allList = document.getElementById("elemList")
     var slider = document.getElementById("size");
     document.getElementById("sizeText").text = slider.value;
     size = slider.value;
@@ -60,26 +62,41 @@ function generateMol(){
     generateTable();
 
     document.getElementById("counter").text = "Verschiedene Felder: " + fieldsMol.length;
+    for(let i = 0; i < fieldsMol.length; i++){
+        let toAdd = new Option(fieldsMol[i])
+        allList.appendChild(toAdd)
+    }
 }
 
 function generateJue(){
     var slider = document.getElementById("size");
+    var allList = document.getElementById("elemList")
     document.getElementById("sizeText").text = slider.value;
+    
     size = slider.value;
     grid = [];
     overrideGrid(fieldsJue, 0);
     generateTable();
 
     document.getElementById("counter").text = "Verschiedene Felder: " + fieldsJue.length;
+    for(let i = 0; i < fieldsJue.length; i++){
+        let toAdd = new Option(fieldsJue[i])
+        allList.appendChild(toAdd)
+    }
 }
 
 function generateLaw(){
+    var allList = document.getElementById("elemList")
     size = 4;
     grid = [];
     overrideGrid(fieldsLaw, 0);
     generateTable();
 
     document.getElementById("counter").text = "Verschiedene Felder: " + fieldsLaw.length;
+    for(let i = 0; i < fieldsLaw.length; i++){
+        let toAdd = new Option(fieldsLaw[i])
+        allList.appendChild(toAdd)
+    }
 }
 
 function generateTable(){
