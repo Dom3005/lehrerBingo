@@ -99,6 +99,17 @@ function generateLaw(){
     }
 }
 
+function printView(){
+    var toHide = document.getElementsByClassName("hidePrint");
+    for(let i = 0; i < toHide.length; i++){
+        toHide[i].style.display = "none";
+    }
+    window.print();
+    for(let i = 0; i < toHide.length; i++){
+        toHide[i].style.display = "inherit";
+    }
+}
+
 function generateTable(){
     var table = document.getElementById("bingo");
     if(table.rows.length > 0){

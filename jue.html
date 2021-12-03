@@ -9,13 +9,14 @@
 <body onload="generateJue()">
 
     <h1 class="center">Bingo: Jütten Edition</h1>
-    <a class="center">Die Tabelle ist interaktiv btw<br></a>
-    <a class="center" id="counter">Verschiedene Felder: </a>
+    <a class="center hidePrint">Die Tabelle ist interaktiv btw<br></a>
+    <a class="center hidePrint" id="counter">Verschiedene Felder: </a>
 
     <div style="height: 10px"></div>
 
-    <ul class="center navbar">
+    <ul class="center navbar hidePrint">
         <li><a onclick="generateJue()">Refresh</a></li>
+        <li><a onclick="printView()">Print</a></li>
         <li><a href="mol.html">Moll Edition<br></a></li>
         <li><a href="law.html">Lawson Edition<br></a></li>
         <li><a id="insta" href="https://www.instagram.com/dominik.grtz/" target="_blank">&nbsp;</a></li>
@@ -24,13 +25,13 @@
 
     <div style="height: 20px"></div>
 
-    <center><input type="range" id="size" min="4" max="8" value="5" onChange="generateJue()"> <a id="sizeText">5</a></center>
+    <center><input type="range" class="hidePrint" id="size" min="4" max="8" value="5" onChange="generateJue()"> <a id="sizeText" class="hidePrint">5</a></center>
 
     <div style="padding-bottom: 30px;"></div>
 
     <table id="bingo"></table>
 
-    <div class="listbox-area center">
+    <div class="listbox-area center hidePrint">
         <div class="left-area">
             <br>Mögliche Begriffe:
             <ul id="elemList" 
