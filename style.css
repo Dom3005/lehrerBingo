@@ -116,3 +116,18 @@ body{
   vertical-align: top;
   width: 650px;
 }
+
+@media print{
+    .hidePrint{
+        display: none;
+    }
+    .showPrint{
+        display: initial;
+    }
+}
+
+@media screen{
+    .showPrint{
+        display: none;
+    }
+}
