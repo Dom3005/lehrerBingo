@@ -20,7 +20,7 @@ let fieldsJue =
     "verwechselt Namen", "nochmal bitte", "öhhh ja", "we already found out..", "what was it?",
     "do you remember..", "thats what .. said", "Jütten.exe has stopped working", "äääähm", "da möchte ich nichts zu sagen",
     "but first..", "good", "ok, any other..", "we're still looking at..", "can you explain..?",
-    "ok", "say it again", "kurze Stille", "right", '[Nennt eine Sache] ".. and so on"',
+    "ok", "say it again", "kurze Stille", "right", '[Nennt eine Sache] ".. and so on"', "Namen falsch"
     "so again", "beschwert sich", "can you think of ..", "äääh..", "Der Jütten'sche Finger",
     "Remember what we said about ..", "Are you still with us?", "Okeee", "Versteht nichts", "come again"]
 
