@@ -1,3 +1,5 @@
+let fieldsHil = [""]
+
 let fieldsLaw = 
     ["Ist nichts wildes", "Rickroll", "Timer", "Mobbt Leute", "Mobbinator",
     "schlechte Witze", "Redet Englisch", "Erzählt Geschichte", "Geschichten aus vergangenen Zeiten", "Begriffe aus dem Englischen",
@@ -95,6 +97,21 @@ function generateLaw(){
     document.getElementById("counter").text = "Verschiedene Felder: " + fieldsLaw.length;
     for(let i = 0; i < fieldsLaw.length; i++){
         let toAdd = new Option(fieldsLaw[i])
+        allList.appendChild(toAdd)
+    }
+}
+
+
+function generateHil(){
+    var allList = document.getElementById("elemList")
+    size = 4;
+    grid = [];
+    overrideGrid(fieldsHil, 0);
+    generateTable();
+
+    document.getElementById("counter").text = "Verschiedene Felder: " + fieldsHil.length;
+    for(let i = 0; i < fieldsHil.length; i++){
+        let toAdd = new Option(fieldsHil[i])
         allList.appendChild(toAdd)
     }
 }
