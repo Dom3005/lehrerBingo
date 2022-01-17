@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Bingo: Hillers Edition</title>
+</head>
+
+<body onload="generateHil()">
+    <h1 class="center">Bingo: Hillers Edition</h1>
+    <a class="center hidePrint">Die Tabelle ist interaktiv btw<br></a>
+    <a class="center hidePrint" id="counter">Verschiedene Felder: </a>
+
+    <div style="height: 10px"></div>
+
+    <ul class="center navbar hidePrint">
+        <li><a onclick="generateHil()">Refresh</a></li>
+        <li><a onclick="printView()">Print</a></li>
+        <li><a href="https://dom3005.github.io/excuses">Excuses</a></li>
+        <li><a href="mol.html">Moll Edition<br></a></li>
+        <li><a href="jue.html">Jütten Edition<br></a></li>
+        <li><a id="insta" href="https://www.instagram.com/dominik.grtz/" target="_blank">&nbsp;</a></li>
+        <li><a id="github" href="https://github.com/Dom3005/lehrerBingo" target="_blank">&nbsp;</a></li>
+    </ul>
+
+    <div style="padding-bottom: 30px;"></div>
+
+    <table id="bingo"></table>
+
+    <!-- Only visible when printing -->
+    <center> <a class="showPrint center"><br>https://dom3005.github.io/lehrerBingo</a></center>
+    
+    <div class="listbox-area center hidePrint">
+        <div class="left-area">
+            <br>Mögliche Begriffe:
+            <ul id="elemList" 
+                tabindex=0
+                role="listbox"
+                aria-labelledby="elem">
+            </ul>
+        </div>
+    </div>
+</body>
