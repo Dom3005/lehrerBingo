@@ -1,4 +1,4 @@
-let fieldsHil = [""]
+let fieldsHil = ["Redet über Hr Küper"]
 
 let fieldsLaw = 
     ["Ist nichts wildes", "Rickroll", "Timer", "Mobbt Leute", "Mobbinator",
