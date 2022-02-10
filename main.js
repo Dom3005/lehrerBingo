@@ -7,7 +7,8 @@ let fieldsLaw =
     "Beamer-Freeze", "Präsentiert Ergebnisse von anderen", "Die Dominik-und-Max-Lösung", "Der Russe", "[JOKER]",
     "(ironischer) Spruch gegen Ausländer", "Verkackt Deutsch", "Ein wichtiger Hinweis", "Verkackt Englisch", "If-Schleife",
     "Und das macht ihr jetzt", "Läuft aus dem Raum", "Verschwindet Spurlos", "(ironischer) Rassistischer Witz", "Zeichnet an das Smartboard",
-    "Benutzt das Whiteboard", "Selbstironische Sprüche", "Was auch immer", "Klausurrelevant", "Nicht Klausurrelevant"]
+    "Benutzt das Whiteboard", "Selbstironische Sprüche", "Was auch immer", "Klausurrelevant", "Nicht Klausurrelevant",
+    "KGB-Modus"]
 
 let fieldsJue =
     ["Ääää.. öööö.. ääh", "Fenster auf", "Atlanten", "Erwähnt seine Reisen", "Oh.. da war ich schonmal",
