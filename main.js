@@ -34,13 +34,13 @@ let fieldsMol =
     "Buch aufschlagen", "Ihr macht jetzt bitte Aufgabe X für mich", "Fenster auf", "Redet über Fallzahlen", "Verstanden?",
     "Mittelmäßige Skizze", "Wer hat hier Physik?", "Benutzt Abituraufgaben", "Erscheint zu spaet", "Da hätte ich mehr erwartet",
     "Redet über Geogebra", "Ich habe ja einen anderen Taschenrechner", "Das geht auch schneller", "Von Dennis weiss ich schon dass er das kann", "Ich hab euch was auf Moodle hochgeladen",
-    "Das ist freiwillig", "Leuteee, das solltet ihr eigentlich koennen", "Da muss ich gleich mal in die Physiksammlung", "Wir liegen hinter dem Zeitplan", "Eigentlich habe ich ja was anderes geplant",
+    "Das ist freiwillig", "Leuteee, das solltet ihr eigentlich koennen", "Physiksammlung", "Wir liegen hinter dem Zeitplan", "Eigentlich habe ich ja was anderes geplant",
     "Regt sich auf", "1-Hand Clap", "Kurzes Handzeichen", "Jungs & Mädels", "Mädels",
     "Jungs", "habe ich schonmal gesagt", "nächste Woche", "wer schon fertig ist...", "wer hat einen funktionsfähigen Tachenrechner?",
     "das müsste man pruefen", "Sekunde", "auch ohne GTR", "Funktion definieren", "wer weiß wie das geht?",
     "mach ich mit meiner 8/9/EF/Q2", "so eine Geschichte", "Mathematiker sind faul", "nimmt jmd ohne Ahnung dran", "[Zahl ohne Einheit] was?",
     "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein", "Halb so wild", "Das Moll'sche Nicken",
-    "Die Sache ist die"];
+    "Die Sache ist die", "Bis hierhin verstanden?", "Enttäuscht, dass niemand aufzeigt]";
 
 let grid = [];
 let size = 5;
