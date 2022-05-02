@@ -41,7 +41,7 @@ let fieldsMol =
     "mach ich mit meiner 8/9/EF/Q2", "so eine Geschichte", "Mathematiker sind faul", "nimmt jmd ohne Ahnung dran", "[Zahl ohne Einheit] was?",
     "Von anderen Mathelehrern ausgeschlossen", "Klausur noch nicht korrigiert", "Redet Fehler klein", "Halb so wild", "Das Moll'sche Nicken",
     "Die Sache ist die", "Bis hierhin verstanden?", "Enttäuscht, dass niemand aufzeigt", "Geschichten aus vergangenen Zeiten",
-    "Sachkontext"];
+    "Sachkontext", "Sportlich"];
 
 let grid = [];
 let size = 5;
